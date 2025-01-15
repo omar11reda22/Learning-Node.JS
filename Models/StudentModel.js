@@ -35,8 +35,12 @@ const studentSchema = new mongoose.Schema({
   address: {
     type: String,
     required: false,
-  }
-  
+  },
+  department: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Department", // Reference to Department model
+    required: true,
+  },
 });
 
 const Student = mongoose.model("Students",studentSchema);

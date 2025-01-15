@@ -1,3 +1,4 @@
+require("dotenv").config();
 module.exports.APP_CONFIG = {
   MONGO_DEV_URI: process.env.MONGO_DEV_URI,
   MONGO_PROD_URI: process.env.MONGO_PROD_URI,
@@ -5,6 +6,6 @@ module.exports.APP_CONFIG = {
   MONGO_DATABASE_NAME: process.env.MONGO_DATABASE_NAME,
   MONGO_DATABASE_USER: process.env.MONGO_DATABASE_USER,
   MONGO_DATABASE_PASSWORD: process.env.MONGO_DATABASE_PASSWORD,
-  APP_NAME: "connect_memo",
+  APP_NAME: "Practices",
   HTTP_PORT: 9797,
-}
+};
